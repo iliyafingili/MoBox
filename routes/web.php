@@ -272,7 +272,7 @@ Route::group(['prefix' => 'profile'], function () {
     Route::post('/shopping-cart/add', [ShopingCartController::class, 'add'])->name('AddToShopingCart')
     ->middleware('auth');;
 
-    Route::get('/shopping-cart/remove/{id}', [ShopingCartController::class, 'remove'])->name('RemoveAsShopingCart');
+    Route::post('/shopping-cart/remove/{id}', [ShopingCartController::class, 'remove'])->name('RemoveAsShopingCart');
 
     Route::post('/shopping-cart/BelongToUser', [ShopingCartController::class, 'BelongToUser'])->name('ProuductBelongToUser');
 
