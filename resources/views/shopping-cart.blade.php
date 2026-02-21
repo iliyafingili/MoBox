@@ -30,6 +30,11 @@
                     <strong id="cart-discount">0 تومان</strong>
                 </div>
 
+                <div class="summary-row">
+                    <span>مبلغ قابل پرداخت</span>
+                    <strong id="cart-total-with-discount">0 تومان</strong>
+                </div>
+
                 <button class="checkout-btn">ادامه و پرداخت</button>
             </div>
 
