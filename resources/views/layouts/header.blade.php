@@ -44,10 +44,10 @@
         <div class="nav-item">
             <a href="#" class="nav-link" id="categories">دسته‌بندی</a>
             <div class="dropdown-menu" id="dropmenu-categories">
-                <a href="{{ route('products') }}">موبایل و تلفن همراه</a>
-                <a href="#">لپتاپ و اولترابوک</a>
-                <a href="#">ساعت هوشمند</a>
-                <a href="#">ایرپاد و هندزفری</a>
+                <a href="{{ route('set_filters', ['type' => 'MobileKeys', 'category' => 'mobile']) }}">موبایل و تلفن همراه</a>
+                <a href="{{ route('set_filters', ['type' => 'LabtopKeys', 'category' => 'laptop']) }}">لپتاپ و اولترابوک</a>
+                <a href="{{ route('set_filters', ['type' => 'WatchKeys', 'category' => 'watch']) }}">ساعت هوشمند</a>
+                <a href="{{ route('set_filters', ['type' => 'AirPadKeys', 'category' => 'airpad']) }}">ایرپاد و هندزفری</a>
             </div>
         </div>
 
