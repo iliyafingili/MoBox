@@ -278,7 +278,6 @@ Route::group(['prefix' => 'profile'], function () {
 
 
 Route::Post('test', function (Request $request) {
-    // dd($request->all());
     return view('test');
 })->name('test');
 
