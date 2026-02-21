@@ -15,7 +15,7 @@
             <h2>تکمیل پروفایل</h2>
         </header>
     <main>
-        <form method="POST" action="{{ route('set-username-password')}}">
+        <form method="POST" action="{{ route('put-username-password')}}">
             @csrf
             <div class="input-group">
                 <label for="set-username">لطفا نام کاربری خود را تنظیم کنید:</label>

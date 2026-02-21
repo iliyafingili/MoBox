@@ -45,7 +45,7 @@ class forgotController extends Controller
         session(['Verify' => true,
                  'code_verified_expires' => now()->addMinutes(1)
             ]);
-        return redirect()->route('show-password')
+        return redirect()->route('show-username-password')
         ->with([
             'NwePassword' => $NwePassword,
             'UserName' => $UserName,

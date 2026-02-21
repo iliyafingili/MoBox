@@ -52,7 +52,7 @@ class SendVerifyCode extends Controller
                 //پایان ارسال پیامک
 
                 RateLimiter::hit($targetNumber, 600);
-                
+
                 session(['CodeSended' => true,
                          'code_verified_expires' => now()->addMinutes(1)
                         ]);
