@@ -31,6 +31,7 @@ window.Swal = Swal;
 import './admin-dashboard';
 import './show-&-edit-products';
 import './produce-show';
+import './shopping-cart.js';
 
 // 4️⃣ CSRF
 window.axios.defaults.headers.common['X-CSRF-TOKEN'] =

@@ -10,7 +10,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position:relative;
     margin-bottom: 16px;
+    border-radius: 16px;
+    color: white;
+    z-index: 0;
 }
 
 .cart-header h2 {
@@ -18,7 +22,7 @@
 }
 
 .cart-count {
-    color: #777;
+    color: white;
     font-size: 0.9rem;
 }
 
@@ -154,4 +158,34 @@
     background: #fff7ed;
     padding: 14px;
     border-radius: 12px;
+}
+
+
+
+
+/* =========responsive============= */
+
+
+
+/* 📱 موبایل (حداکثر 768px) */
+@media screen and (max-width: 768px) {
+    .cart-page {
+        grid-template-columns: 1fr;
+        padding: 16px;
+        gap: 16px;
+    }
+
+    /* پنل پرداخت در موبایل به صورت عادی نمایش داده میشه */
+    .checkout-panel {
+        /* position: static; ریست کردن position در موبایل */
+        margin-bottom: 16px;
+    }
+}
+
+
+.checkout-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-self: start; /* این باعث میشه پنل از بالا شروع بشه */
 }
